@@ -1,0 +1,148 @@
+.body {
+    background-color: whitesmoke;
+    min-height: 100vh;
+    padding-bottom: 80px; /* ruang untuk footer fixed */
+}
+
+/* ========================================
+   FLOATING BOX - Kotak Mengambang
+   Class utama untuk membuat efek card/kotak
+   yang terlihat melayang di atas background.
+   ======================================== */
+
+.floating-box {
+    background-color: #ffffff;          /* warna latar kotak putih */
+    border-radius: 16px;                /* sudut kotak melengkung */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);  /* bayangan agar terlihat mengambang */
+    padding: 30px 40px;                 /* jarak isi ke tepi kotak */
+    margin: 30px 60px;                  /* jarak kotak ke tepi halaman */
+}
+
+/* ========================================
+   BERANDA
+   ======================================== */
+
+.welc {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: powderblue;
+}
+.welc2 {
+    text-align: left;
+    margin-left: 60px;
+    margin-top: 0px;
+    color: blueviolet;
+    font-weight: bold;
+}
+.p1b {
+    margin-left: 0px;
+    line-height: 1.6;
+    color: #333;
+}
+.h3b {
+    margin-left: 80px;
+    color: rgb(255, 153, 0);
+    font-weight: bold;
+}
+
+/* ========================================
+   DATA DIRI
+   ======================================== */
+
+.wadahflex {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    /* margin dihilangkan karena sudah diatur oleh .floating-box */
+}
+.tdiri {
+    color: darkcyan;
+}
+.foto {
+    width: 300px;
+    height: 400px;
+    border-radius: 12px;   /* sudut foto juga melengkung agar selaras */
+}
+
+/* ========================================
+   AKTIVITAS
+   ======================================== */
+
+.wadahflexa {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    /* margin dihilangkan karena sudah diatur oleh .floating-box */
+}
+.fotoa {
+    width: 300px;
+    height: 400px;
+    border-radius: 12px;
+}
+.p1a {
+    color: blanchedalmond;
+    font-weight: bold;
+    font-size: larger;
+}
+
+/* ========================================
+   KONTAK
+   ======================================== */
+
+.kontak {
+    /* styling lama dihapus, diganti oleh .floating-box di HTML */
+}
+
+.p1 {
+    line-height: 1.8;
+}
+
+.link-hubungi {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 24px;
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.link-hubungi:hover {
+    background-color: #6a1bb3;
+}
+
+/* ========================================
+   HUBUNGI (Form Pesan)
+   ======================================== */
+
+.pesan {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* margin & background dihilangkan, diganti oleh .floating-box */
+}
+
+.kolom1 {
+    width: 90%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.kolom2 {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.kolom2:hover {
+    background-color: #6a1bb3;
+}

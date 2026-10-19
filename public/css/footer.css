@@ -1,0 +1,17 @@
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);  /* gradasi gelap */
+    padding: 16px 0;
+    border-top: 2px solid blueviolet;       /* garis atas ungu sebagai aksen */
+}
+
+.footer-text {
+    color: #ccc;
+    font-size: 14px;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
