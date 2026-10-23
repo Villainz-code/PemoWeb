@@ -1,13 +1,16 @@
 .nav {
-    margin: 20px 60px 0 60px;           /* sejajar dengan floating-box */
+    position: sticky;
+    top: 10px;
+    margin: 20px 60px 0 60px;
     background-color: #000000;
     border-radius: 20px;
+    z-index: 1000;
 }
 .navUl{
     list-style: none;
     display: flex;
-    justify-content: center;            /* dari flex-end → center */
-    gap: 30px;                          /* jarak antar menu diperbesar */
+    justify-content: center;
+    gap:20px;
     padding: 12px 0;
 }
 .nava{

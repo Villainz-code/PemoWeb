@@ -17,7 +17,7 @@
         </div>
         <div>
             <input class="kolom2" type="button"  value="Kirim">
-            <input class="kolom2" type="button"  value="Batal">
+            <a href="{{ route('kontak') }}"><input class="kolom2" type="button"  value="Batal"></a>
         </div>
     </div>
 </div>
