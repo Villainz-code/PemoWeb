@@ -8,12 +8,22 @@
 </head>
 <body class="body">
 @include('layouts.header')
-    <div>
+    <div class="floating-box form-container">
+        <h2 class="form-title">Detail Aktivitas</h2>
         <div>
-            <h5>{{ $aktivitas->nama_aktivitas }}</h5>
-            <p><strong>Deskripsi</strong> {{ $aktivitas->deskripsi }}</p>
-            <p><strong>Tanggal</strong> {{ $aktivitas->tanggal->format('d m Y') }}</p>
-            <p><strong>Status</strong> {{ $aktivitas->status ? 'Selesai' : 'Belum Selesai' }}</p>
+            <h3 style="margin-top: 0; color: blueviolet;">{{ $aktivitas->nama_aktivitas }}</h3>
+            <p><strong>Deskripsi:</strong> {{ $aktivitas->deskripsi }}</p>
+            <p><strong>Tanggal:</strong> {{ $aktivitas->tanggal->format('d M Y') }}</p>
+            <p><strong>Status:</strong>
+                @if($aktivitas->status)
+                    <span class="badge badge-success">Selesai</span>
+                @else
+                    <span class="badge badge-pending">Belum Selesai</span>
+                @endif
+            </p>
+        </div>
+        <div style="margin-top: 24px;">
+            <a href="{{ route('aktivitas') }}" class="btn-cancel">Kembali</a>
         </div>
     </div>
 @include('layouts.footer')
